@@ -69,7 +69,6 @@ img ~ p{
 	height: 90%; 
     text-align:center; 
     display:table;
-
 }
 
 .home-fruits{
@@ -84,7 +83,6 @@ img ~ p{
 	background-repeat: no-repeat;
 	background-color:gray;
 	opacity: 0.7;
-
 }
 
 .home-fruits h1,.home-vegetables h1{
@@ -97,4 +95,26 @@ img ~ p{
 footer {
 	text-align: center;
 	padding:5px;
+}
+
+@media screen and (max-width:480px){
+	.company-name{
+		display: block;
+		text-align: center;
+		font-size: 20px;
+		text-transform:capitalize;
+		color: grey;
+		height: 40px;
+	}	
+
+	.jumbotron {
+	background-image: url("http://www.hdwallpapersinn.com/wp-content/uploads/2015/04/Vegetables-Desktop-Wallpapers.jpg");
+	background-size: cover;
+   	color:white;
+	background-color: grey;
+	background-blend-mode:multiply;	
+	height: 250px;
+	font-size: 50%;
+}
+	
 }
