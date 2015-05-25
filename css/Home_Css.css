@@ -74,7 +74,7 @@ img ~ p{
 .home-fruits{
 	background-image: url("http://www.yee7.com/wallpaper/wallpapers/wallpapers-fruit-fruits-hd-jootix-wallpaper-fruit-jootixwallpaper-wallpapers-fruits-hd-jootix.jpg");
 	background-repeat: no-repeat;
-	opacity: 0.7;
+
 }
 
 
@@ -82,9 +82,11 @@ img ~ p{
 	background-image: url("http://fullhdwp.com/images/wallpapers/Vegetable-Wallpaper-HD.jpg");
 	background-repeat: no-repeat;
 	background-color:gray;
-	opacity: 0.7;
 }
-
+.home-vegetables:hover,
+.home-fruits:hover{
+	{background-color:rgba(255,0,0,.5);}
+}
 .home-fruits h1,.home-vegetables h1{
 	color: white;
 	display:inline-grid; 
@@ -95,6 +97,7 @@ img ~ p{
 footer {
 	text-align: center;
 	padding:5px;
+	margin-top: 2px solid grey;
 }
 
 @media screen and (max-width:480px){
@@ -116,5 +119,31 @@ footer {
 	height: 250px;
 	font-size: 50%;
 }
+	.jumbotron h1{
+		font-size: 31px;
+	}
+	.jumbotron p{
+		font-size: 15px;
+	}
+	.col-md-4 p{
+		font-size: 15px;
+	}
+}
+iframe {
+	width: 600px;
+	max-width: 100% !important;
+	border :  none;
+	margin: 60px 0 0 0;
+}
+
+
+
+#Contact_us {
+	margin-top: 50px;
+}
+
+#Contact_us Visit_us {
 	
 }
+
+

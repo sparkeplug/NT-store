@@ -14,8 +14,8 @@
     <body>
         <div class="company-name">
 			<label> NAMMA </label><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvQIslswIJDtj0Eup-YsRn16gv0hS8dy8TA8oWS1dMETZFS8rT" class="company-image" style="height:100%;width=100%"><label> THOTTAM</label>
-        </div>     
-        <nav class="navbar navbar-default space"> 
+        </div>
+        <nav class="navbar navbar-default space">
 			<div class="container-fluid" >
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -27,7 +27,7 @@
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
 						<li class="divider-vertical"></li>
-						<li class="active"><a href="Home.html"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
+						<li><a href="Home.html"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
 						<li class="divider-vertical"></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS<span class="caret"></span></a>
@@ -39,23 +39,23 @@
 						<li class="divider-vertical"></li>
 						<li><a href="Who_we_are.html">WHO WE ARE</a></li>
 						<li class="divider-vertical"></li>
-						<li><a href="Contact_us.html">CONTACT US</a></li>
+						<li class="active"><a href="Contact_us.html">CONTACT US</a></li>
 						<li class="divider-vertical"></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						
+
 							<!--  SIGN UP Modal trigger -->
-								
+
 								<li><a href="#mySignup" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> SIGNUP</a></li>
-							
+
 							<!-- SIGN UP Modal -->
-						
+
 								<div class="modal fade"  role="dialog" id="mySignup">
 									<div class="modal-dialog">
-									
+
 
 							<!-- SIGN UP Modal content -->
-									
+
 								<div class="modal-content">
 									<div class="modal-header">
 										<button type="button" data-dismiss="modal" class="close">&times;</button>
@@ -78,7 +78,7 @@
 												<div class="form-group">
 													<label for="password">Password</label>
 													<input type="password" class="form-control" id="password">
-												</div>							
+												</div>
 												<div class="form-group">
 													<label for="confirm-p">Confirm Password</label>
 													<input type="password" class="form-control" id="confirm-p">
@@ -86,7 +86,7 @@
 												<div class="form-group">
 													<label for="mobile">Mobile</label>
 													<input type="text" class="form-control" id="mobile">
-												</div>					
+												</div>
 												<button type="submit" class="btn btn-md btn-default">Register</button>
 												<button type="reset" class="btn btn-md btn-default">Reset</button>
 											</form>
@@ -94,20 +94,20 @@
 									</div>
 								</div>
 							<!-- Modal trigger -->
-		
+
 									</div>
 
-						
-							
-							<li><a href="#myModal" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>							
+
+
+							<li><a href="#myModal" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
 							<!-- modal -->
 
 								<div id="myModal" class="modal fade" role="dialog">
-									<div class="modal-dialog ">
+									<div class="modal-dialog">
 
 								<!-- modal content -->
 
-									<div class="modal-content">			
+									<div class="modal-content">
 										<div class="modal-header">
 											<button class="close" type="button" data-dismiss="modal">&times;</button>
 											<h4 class="modal-title text-center">LOGIN</h4>
@@ -125,8 +125,6 @@
 												<div class="checkbox">
 													<label><input type="checkbox">Remember me</label>
 												</div>
-												<button class="btn btn-md btn-primary">LOGIN</button>
-												<button class="btn btn-md btn-primary">Forget Password ?</button>
 
 											</form>
 										</div>
@@ -134,55 +132,45 @@
 								</div>
 							</div>
 					</ul>
-					
 				</div>
-			</div>	
+			</div>
 		</nav>
-		<div class="jumbotron">
-			<div class="container">
-				<h1>NAMMA THOTTAM</h1>
-				<p>Dindigul's first online , pesticide free fruits and vegetables shop. Place the order and we'll deliver it  for free</p>
-				<a href="#" class="btn btn-info btn-lg">Shop now</a>
+		<div class="container"  id="Contact_us">
+			<div class="col-md-8">
+				<form role="form">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" id="Name">
+					</div>
+					<div class="form-group">
+						<label for="email">E-mail</label>
+						<input type="email" id="email" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="mobile">Mobile</label>
+						<input type="text" id="mobile" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea id="message" class="form-control"></textarea>
+					</div>
+					<button type="submit" class="btn btn-md btn-Primary">Submit</button>
+				</form>
+			</div>
+
+			<div class="col-md-4">
+				<h3>Visit us at :</h3>
+				<h6>NAMMA THOTTAM ,</h6>
+				<h6>18b, Aarthi theatre road,</h6>
+				<h6>Dindigul - 624001.</h6>
+				<h6>Mobile  :  +91-9842225077</h6>
+				<h6>E-mail  :  NammaThottam@gmail.com</h6>
 			</div>
 		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<img src="https://www.intelligentnutrients.ca/wp-content/uploads/2013/08/What-Is-Organic-Skin-Care.jpg" class="image-cropper center-block">
-					<p>we sell pesticide free organic fruits and vegetables at affordable prices</p>
-				</div>
-				<div class="col-md-4">
-					<img src="http://www.only786.com/skin/frontend/default/telesky/images/COD.gif" class="image-cropper center-block">
-					<p>Call and place your order, we'll deliver it free at your doorstep</p>
-				</div>
-				<div class="col-md-4">
-					<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwQY64owT7_4rbLp4I95LnyldBtRgz_sM5DvyEsTCiDPSXFi89" class="image-cropper center-block">
-					<p>Go online to place your order too !</p>
-				</div>
-			</div>
-		</div>
-		<hr>
-		<div class="container">
-			<div class="row home-products">
-				<h1>PRODUCTS</h1>
-			</div>
-			<div class="row home-products">					
-				<a href="#">
-						<div class="home-fruits col-xs-12 col-sm-12 col-md-6">
-							<h1>FRUITS</h1>				
-						</div>
-				</a>
-				<a href="#">
-						<div class="home-vegetables col-xs-12 col-sm-12 col-md-6">
-							<h1>VEGETABLES</h1>	
-						</div>
-				</a>
-			</div>
-		</div>
-		<hr>
+
 		<div>
 			<footer>&copy; Namma Thottam 2015</footer>
 		</div>
-		
+
     </body>
 </html>
