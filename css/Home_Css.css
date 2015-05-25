@@ -136,14 +136,10 @@ iframe {
 	margin: 60px 0 0 0;
 }
 
-
-
 #Contact_us {
 	margin-top: 50px;
 }
 
-#Contact_us Visit_us {
-	
+.home-fruits:hover,.home-vegetables:hover{
+	opacity: 0.7;
 }
-
-
