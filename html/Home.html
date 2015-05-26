@@ -57,38 +57,38 @@
 
 							<!-- SIGN UP Modal content -->
 									
-								<div class="modal-content">
+								<div class="modal-content" id="signup_modal">
 									<div class="modal-header">
 										<button type="button" data-dismiss="modal" class="close">&times;</button>
 										<h4 class="modal-title  text-center">SIGNUP</h4>
 									</div>
 									<div class="modal-body">
-											<form role="form">
+											<form role="form" onsubmit="validation();">
 												<div class="form-group">
 													<label for="firstname">Firstname</label>
-													<input type="text" class="form-control" id="firstname" placeholder="Enter the firstname" required>
+													<input type="text" class="form-control" name="Firstname" id="signup_fname" placeholder="Enter the firstname" oninvalid="validation();" oninput="validation();" required>
 												</div>
 												<div class="form-group">
 													<label for="lastname">Lastname</label>
-													<input type="text" class="form-control" id="lastname" placeholder="Enter your lastname" required>
+													<input type="text" class="form-control" name="Lastname" id="signup_lname" placeholder="Enter your lastname" oninvalid="validation();" oninput="validation();" required>
 												</div>
 												<div class="form-group">
 													<label for="email">E-Mail</label>
-													<input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+													<input type="email" class="form-control" name="Email" id="signup_email" placeholder="Enter your email address" oninvalid="validation();" oninput="validation();" required>
 												</div>
 												<div class="form-group">
 													<label for="password">Password</label>
-													<input type="password" class="form-control" id="password" placeholder="St your new password" required>
+													<input type="password" class="form-control" name="Password" id="signup_pass" placeholder="Set your new password" oninvalid="validation();" oninput="validation();" required>
 												</div>							
 												<div class="form-group">
 													<label for="confirm-p">Confirm Password</label>
-													<input type="password" class="form-control" id="confirm-p" placeholder="Confirm password" required>
+													<input type="password" class="form-control" name="Confirm Password" id="signup_cpass" placeholder="Confirm password" oninvalid="validation();" oninput="validation();" required>
 												</div>
 												<div class="form-group">
 													<label for="mobile">Mobile</label>
-													<input type="text" class="form-control" id="mobile" placeholder="Mobile number" required>
+													<input type="text" class="form-control" name="mobile" id="signup_mobile" placeholder="Mobile number" required>
 												</div>					
-												<button type="submit" onclick="validation()" value="submit" class="btn btn-md btn-primary">Register</button>
+												<button type="submit" value="submit" class="btn btn-md btn-primary"  >Register</button>
 												<button type="reset" class="btn btn-md btn-primary">Reset</button>
 											</form>
 										</div>
@@ -116,12 +116,12 @@
 										<div class="modal-body">
 											<form role="form">
 												<div class="form-group">
-													<label for="username">E-mail</label>
-													<input type="email" class="form-control" id="username" required>
+													<label for="login_username">E-mail</label>
+													<input type="email" class="form-control" id="login_username" required>
 												</div>
 												<div class="form-group">
-													<label for="password">Password</label>
-													<input type="password" class="form-control" id="password" required>
+													<label for="login_pass">Password</label>
+													<input type="password" class="form-control" id="login_pass" required>
 												</div>
 												<div class="checkbox">
 													<label><input type="checkbox">Remember me</label>
