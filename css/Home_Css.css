@@ -17,7 +17,7 @@ body{
 }
 
 .jumbotron {
-	background-image: url("http://www.hdwallpapersinn.com/wp-content/uploads/2015/04/Vegetables-Desktop-Wallpapers.jpg");
+	background-image: url("../Images/Jumbotron.jpg");
 	background-size: cover;
    	color:white;
 	background-color: grey;
@@ -72,26 +72,31 @@ img ~ p{
 }
 
 .home-fruits{
-	background-image: url("http://www.yee7.com/wallpaper/wallpapers/wallpapers-fruit-fruits-hd-jootix-wallpaper-fruit-jootixwallpaper-wallpapers-fruits-hd-jootix.jpg");
+	background-image: url("../Images/Fruits_home.jpg");
 	background-repeat: no-repeat;
 
 }
 
 
 .home-vegetables{
-	background-image: url("http://fullhdwp.com/images/wallpapers/Vegetable-Wallpaper-HD.jpg");
+	background-image: url("../Images/Vegetable_home.jpg");
 	background-repeat: no-repeat;
-	background-color:gray;
 }
-.home-vegetables:hover,
-.home-fruits:hover{
-	{background-color:rgba(255,0,0,.5);}
+
+.home-vegetables:hover,.home-fruits:hover{
+	{
+		background-color:rgba(255,0,0,.5);
+	}
 }
 .home-fruits h1,.home-vegetables h1{
 	color: white;
 	display:inline-grid; 
 	vertical-align:middle;
 	margin: 5px;
+}
+
+.alert {
+	border: 1p solid #000;
 }
 
 footer {
@@ -111,7 +116,7 @@ footer {
 	}	
 
 	.jumbotron {
-	background-image: url("http://www.hdwallpapersinn.com/wp-content/uploads/2015/04/Vegetables-Desktop-Wallpapers.jpg");
+	background-image: url("../Images/Jumbotron.jpg");
 	background-size: cover;
    	color:white;
 	background-color: grey;
@@ -143,3 +148,13 @@ iframe {
 .home-fruits:hover,.home-vegetables:hover{
 	opacity: 0.7;
 }
+
+textarea {
+	resize:inherit;
+}
+
+.field_width {
+	width: 70%
+}
+
+
