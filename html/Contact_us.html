@@ -9,13 +9,14 @@
 		<!-- Latest compiled JavaScript -->
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<link type="text/css" rel="stylesheet" href="../css/Home_Css.css" />
+		<script src="../Javascript/Validations.js" type="text/javascript"></script>
 		<title>NAMMA THOTTAM</title>
     </head>
     <body>
         <div class="company-name">
 			<label> NAMMA </label><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvQIslswIJDtj0Eup-YsRn16gv0hS8dy8TA8oWS1dMETZFS8rT" class="company-image" style="height:100%;width=100%"><label> THOTTAM</label>
         </div>
-        <nav class="navbar navbar-default space">
+<nav class="navbar navbar-default space">
 			<div class="container-fluid" >
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -27,19 +28,19 @@
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
 						<li class="divider-vertical"></li>
-						<li><a href="Home.html"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
+						<li class="active"><a href="Home.html"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
 						<li class="divider-vertical"></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS<span class="caret"></span></a>
 								<ul class="dropdown-menu">
-									<li><a href="#">Fruits</a></li>
-									<li><a href="#">Vegetables</a></li>
+									<li><a href="Products.html">Fruits</a></li>
+									<li><a href="Products.html">Vegetables</a></li>
 								</ul>
 							</li>
 						<li class="divider-vertical"></li>
 						<li><a href="Who_we_are.html">WHO WE ARE</a></li>
 						<li class="divider-vertical"></li>
-						<li class="active"><a href="Contact_us.html">CONTACT US</a></li>
+						<li><a href="Contact_us.html">CONTACT US</a></li>
 						<li class="divider-vertical"></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
@@ -56,54 +57,52 @@
 
 							<!-- SIGN UP Modal content -->
 
-								<div class="modal-content">
+								<div class="modal-content" id="signup_modal">
 									<div class="modal-header">
 										<button type="button" data-dismiss="modal" class="close">&times;</button>
 										<h4 class="modal-title  text-center">SIGNUP</h4>
 									</div>
 									<div class="modal-body">
-											<form role="form">
+											<form role="form" onsubmit="validation();">
 												<div class="form-group">
-													<label for="firstname">Firstname</label>
-													<input type="text" class="form-control" id="firstname">
+													<label for="signup_fname">Firstname</label>
+													<input type="text" class="form-control" name="Firstname" id="signup_fname" placeholder="Enter the firstname" oninvalid="validation();" oninput="validation();" required>
 												</div>
 												<div class="form-group">
-													<label for="lastname">Lastname</label>
-													<input type="text" class="form-control" id="lastname">
+													<label for="signup_lname">Lastname</label>
+													<input type="text" class="form-control" name="Lastname" id="signup_lname" placeholder="Enter your lastname" oninvalid="validation();" oninput="validation();" required>
 												</div>
 												<div class="form-group">
-													<label for="email">E-Mail</label>
-													<input type="email" class="form-control" id="email">
+													<label for="signup_email">E-Mail</label>
+													<input type="email" class="form-control" name="Email" id="signup_email" placeholder="Enter your email address" oninvalid="validation();" oninput="validation();" required>
 												</div>
 												<div class="form-group">
-													<label for="password">Password</label>
-													<input type="password" class="form-control" id="password">
+													<label for="signup_pass">Password</label>
+													<input type="password" class="form-control" name="Password" id="signup_pass" placeholder="Set your new password" oninvalid="validation();" oninput="validation();" required>
 												</div>
 												<div class="form-group">
-													<label for="confirm-p">Confirm Password</label>
-													<input type="password" class="form-control" id="confirm-p">
+													<label for="signup_cpass">Confirm Password</label>
+													<input type="password" class="form-control" name="Confirm Password" id="signup_cpass" placeholder="Confirm password" oninvalid="validation();" oninput="validation();" required>
 												</div>
 												<div class="form-group">
-													<label for="mobile">Mobile</label>
-													<input type="text" class="form-control" id="mobile">
+													<label for="signup_mobile">Mobile</label>
+													<input type="text" class="form-control" name="mobile" id="signup_mobile" placeholder="Mobile number" onkeypress="return event.charCode > 47 && event.charCode < 58;" pattern="[0-9]{10}" required>
 												</div>
-												<button type="submit" class="btn btn-md btn-primary">Register</button>
+												<button type="submit" value="submit" class="btn btn-md btn-primary"  >Register</button>
 												<button type="reset" class="btn btn-md btn-primary">Reset</button>
 											</form>
 										</div>
 									</div>
 								</div>
-							<!-- Modal trigger -->
 
-									</div>
-
-
+								</div>
+						<!-- Modal trigger -->
 
 							<li><a href="#myModal" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
 							<!-- modal -->
 
 								<div id="myModal" class="modal fade" role="dialog">
-									<div class="modal-dialog">
+									<div class="modal-dialog ">
 
 								<!-- modal content -->
 
@@ -115,24 +114,28 @@
 										<div class="modal-body">
 											<form role="form">
 												<div class="form-group">
-													<label for="username">Username</label>
-													<input type="email" class="form-control" id="username">
+													<label for="login_username">E-mail</label>
+													<input type="email" class="form-control" id="login_username" name="Email" oninvalid="login();" placeholder="Enter email ID" required>
 												</div>
 												<div class="form-group">
-													<label for="password">Password</label>
-													<input type="password" class="form-control" id="password">
+													<label for="login_pass">Password</label>
+													<input type="password" class="form-control" id="login_pass" name="password" oninvalid="login();" oninput="login();" placeholder="Enter password" required>
 												</div>
-												<div class="checkbox">
-													<label><input type="checkbox">Remember me</label>
-												</div>
-												<button class="btn btn-md btn-primary">LOGIN</button>
-												<button class="btn btn-md btn-primary">Forget Password ?</button>
+
+												<button class="btn btn-md btn-primary" type="submit" value="submit">LOGIN</button>
+
+												<!-- Forgot password modal -->
+
+												<button class="btn btn-md btn-primary" type="button" data-toggle="modal" id="frgt_btn">Forget Password ?</button>
+
+
 											</form>
 										</div>
 									</div>
 								</div>
 							</div>
 					</ul>
+
 				</div>
 			</div>
 		</nav>

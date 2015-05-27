@@ -30,5 +30,12 @@ HOVER EFFECTS:
 
 	- The home page products are added with hover effects ,so that the opacity of the image changes.
 
+CLIENT SIDE VALIDATIONS :
 
+	- The client side validations for SIGN UP and LOGIN model are done using JAVASCRIPT  and JQUERY.
+	- Field specific HTML 5 custom messages are included to give more clarity to the errors in field.
+	- Incorrect fields are highlighted in RED color using the BOOTSTRAP "Alert" classes and this effect is achieved in realtime using Jquery "addClass()" and "removeClass()" functions.
 	
+YOUTUE VIDEO INTEGRATION  :
+
+	- youtube video about ORGANIC vs INORGANIC is added in the "WHO WE ARE PAGE".
