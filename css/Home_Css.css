@@ -20,6 +20,7 @@ body{
 	background-image: url("../Images/Jumbotron.jpg");
 	background-size: cover;
    	color:white;
+	text-shadow: 1px 1px 5px #000000;
 	background-color: grey;
 	background-blend-mode:multiply;	
 	height: 325px;
@@ -63,6 +64,8 @@ img ~ p{
 
 .home-fruits,.home-vegetables {
 	display:;
+	color: white;
+	text-shadow: 1px 1px 5px #000000;
 	height: 500px;
 	padding: 0px;
 	border: 2px solid black;
@@ -83,8 +86,7 @@ img ~ p{
 	background-repeat: no-repeat;
 }
 
-.home-vegetables:hover,.home-fruits:hover{
-	{
+
 		background-color:rgba(255,0,0,.5);
 	}
 }
@@ -154,7 +156,11 @@ textarea {
 }
 
 .field_width {
-	width: 70%
+	width: 70%;
+}
+.cf:after{
+	clear: both;
+	visibility: hidden;
 }
 
 

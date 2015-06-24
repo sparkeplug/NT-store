@@ -1,0 +1,8 @@
+
+.product-border {
+	margin: 2px solid black;
+}
+
+.panel-head-cust,.panel-foot-cust {
+	padding:0px !important;
+}

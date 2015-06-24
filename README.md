@@ -39,3 +39,4 @@ CLIENT SIDE VALIDATIONS :
 YOUTUE VIDEO INTEGRATION  :
 
 	- youtube video about ORGANIC vs INORGANIC is added in the "WHO WE ARE PAGE".
+	

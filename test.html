@@ -1,0 +1,120 @@
+
+<nav class="navbar navbar-default space">
+			<div class="container-fluid" >
+
+				<!-- NAVBAR TOGGLE  -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<!-- NAVBAR options -->
+				<div class="collapse navbar-collapse" id="myNavbar">
+
+					<!-- NAVBAR LEFT OPTIONS -->
+					<ul class="nav navbar-nav">
+						<li class="divider-vertical"></li>
+						<li><a ui-sref="home" ><span class="glyphicon glyphicon-home"></span>HOME</a></li>
+						<li class="divider-vertical"></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a ui-sref="Products">Fruits</a></li>
+									<li><a ui-sref="Products">Vegetables</a></li>
+								</ul>
+						</li>
+						<li class="divider-vertical"></li>
+						<li><a ui-sref="WhoWeAre">WHO WE ARE</a></li>
+						<li class="divider-vertical"></li>
+						<li><a ui-sref="Contact">CONTACT US</a></li>
+						<li class="divider-vertical"></li>
+					</ul>
+
+					<!-- NAVBAR RIGHT OPTIONS  -->
+					<ul class="nav navbar-nav navbar-right">
+
+						<!--  SIGN UP Modal trigger -->
+						<li><a href="#mySignup" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> SIGNUP</a></li>
+
+						<!-- SIGN UP Modal -->
+						<div class="modal fade"  role="dialog" id="mySignup">
+							<div class="modal-dialog">
+
+								<!-- SIGN UP Modal content -->
+								<div class="modal-content" id="signup_modal">
+									<div class="modal-header">
+										<button type="button" data-dismiss="modal" class="close">&times;</button>
+										<h4 class="modal-title  text-center">SIGNUP</h4>
+									</div>
+									<div class="modal-body">
+										<form role="form" onsubmit="validation();">
+											<div class="form-group">
+												<label for="signup_fname">Firstname</label>
+												<input type="text" class="form-control" name="Firstname" id="signup_fname" placeholder="Enter the firstname" oninvalid="validation();" required>
+											</div>
+											<div class="form-group">
+												<label for="signup_lname">Lastname</label>
+												<input type="text" class="form-control" name="Lastname" id="signup_lname" placeholder="Enter your lastname" oninvalid="validation();" required>
+											</div>
+											<div class="form-group">
+												<label for="signup_email">E-Mail</label>
+												<input type="email" class="form-control" name="Email" id="signup_email" placeholder="Enter your email address" oninvalid="validation();" required>
+											</div>
+											<div class="form-group">
+												<label for="signup_pass">Password</label>
+												<input type="password" class="form-control" name="Password" id="signup_pass" placeholder="Set your new password" oninvalid="validation();" required>
+											</div>
+											<div class="form-group">
+												<label for="signup_cpass">Confirm Password</label>
+												<input type="password" class="form-control" name="Confirm Password" id="signup_cpass" placeholder="Confirm password" oninvalid="validation();" required>
+											</div>
+											<div class="form-group">
+												<label for="signup_mobile">Mobile</label>
+												<input type="text" class="form-control" name="mobile" id="signup_mobile" placeholder="Mobile number" onkeypress="return event.charCode > 47 && event.charCode < 58;" pattern="[0-9]{10}" required>
+											</div>
+											<button type="submit" value="submit" class="btn btn-md btn-primary"  >Register</button>
+											<button type="reset" class="btn btn-md btn-primary">Reset</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Modal trigger -->
+						<li><a href="#myModal" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
+						<!-- modal -->
+						<div id="myModal" class="modal fade" role="dialog">
+							<div class="modal-dialog ">
+
+							<!-- modal content -->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button class="close" type="button" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title text-center">LOGIN</h4>
+								</div>
+								<div class="modal-body">
+									<form role="form">
+										<div class="form-group">
+											<label for="login_username">E-mail</label>
+											<input type="email" class="form-control" id="login_username" name="Email" oninvalid="login();" placeholder="Enter email ID" required>
+										</div>
+										<div class="form-group">
+											<label for="login_pass">Password</label>
+											<input type="password" class="form-control" id="login_pass" name="password" oninvalid="login();" oninput="login();" placeholder="Enter password" required>
+										</div>
+										<button class="btn btn-md btn-primary" type="submit" value="submit">LOGIN</button>
+
+										<!-- Forgot password modal -->
+										<button class="btn btn-md btn-primary" type="button" data-toggle="modal" id="frgt_btn">Forget Password ?</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+	</nav>

@@ -1,0 +1,25 @@
+<div class="container text-center">
+	<div class="row">
+		<h2>FRUITS</h2>
+	</div>
+	<hr>
+	<div class="row panel-group">
+		<div class="col-md-3 col-xs-12 col-sm-6 panel panel-default" ng-repeat="product in store.products">
+			<div class="panel-heading panel-head-cust">
+				<h4><strong>{{product.name}}</strong></h4>
+			</div>
+			<div class="panel-content">
+				<img ng-src="{{product.image}}" ng-class="'image-cropper center-block'">
+				<div style="display:block;">
+					<h4><strong>{{product.price|currency:"Rs.":2}}/Kg</strong></h4>
+				</div>
+				<div>
+					<input type="number" name="quantity" style="color:black;width:50px" placeholder="Qty" name="quantity"><label for="quantity">&nbsp;Kg</label>
+				</div>
+				<div class="panel-footer panel-foot-cust">
+					<button ng-show="product.canPurchase" ng-hide="product.soldOut" class="btn btn-md btn-primary" type="button">Add to Cart</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
